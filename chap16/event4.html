@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          
+        </style>    
+    </head>
+    <body>
+        <input id="elem" type="button" value="클릭해 주세요.">
+        
+        <script>
+        
+        let obj = {
+            handleEvent(event) {
+                alert(event.type + " 이벤트가 " + event.currentTarget + "에서 발생했습니다.");
+            }
+        };
+        elem.addEventListener('click', obj);
+        </script>
+    </body>
+   
+</html>

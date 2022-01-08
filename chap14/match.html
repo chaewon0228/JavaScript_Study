@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <a href="http://example.com/file.zip">...</a>
+        <a href="http://ya.ru">...</a>
+        <script>
+            for(let elem of document.body.children){
+                // a로 시작하고 href를 포함([])하며 zip으로 끝나는($) 요소 
+                if(elem.matches('a[href$="zip"]')){
+                    alert("주어진 css 선택자와 일치하는 요소: "+elem.href);
+                }
+            }
+        </script> 
+     </body>
+   
+</html>

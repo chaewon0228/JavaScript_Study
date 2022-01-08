@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div id="elem">Hello <b>World</b></div>
+
+        <script>
+            //요소 자체를 바꿈
+            /*let elem = document.getElementById("elem");
+            alert(elem.innerHTML);
+            elem.innerHTML= "<p> A new element</p>"
+            alert(elem.innerHTML);*/
+
+            let elem = document.getElementById("elem");
+            alert(elem.outerHTML);
+            elem.innerHTML= "<p> A new element</p>" //dom 바뀜(page) //요소는 안바뀜
+            alert(elem.outerHTML);
+        </script>
+
+    </body>
+</html>

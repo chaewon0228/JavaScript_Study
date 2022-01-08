@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .alert {
+              padding: 15px;
+              border: 1px solid #d6e9c6;
+              border-radius: 4px;
+              color: #3c763d;
+              background-color: #dff0d8;
+            }
+        </style>    
+    </head>
+    <body>
+        <!--<div class="alert">
+                <strong>안녕</strong> 확인-->
+        <script>
+            let check = document.createElement("check");
+            check.className = "alert";
+            check.innerHTML = "<strong>안녕하세요!</strong> 중요 메시를 확인하셨습니다."
+            document.body.append(check);
+
+            
+        </script>
+    </body>
+   
+</html>

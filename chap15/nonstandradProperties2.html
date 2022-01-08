@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .order[data-order-state="new"] {
+                color: green;
+            }
+
+            .order[data-order-state="pending"] {
+                color: blue;
+            }
+
+            .order[data-order-state="canceled"] {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div show-info="name"></div>    
+        <div show-info="age"></div>
+
+        <div id="order" class="order" order-state="new">
+            A new order.
+        </div>
+
+        <div id="order" class="order" order-state="pending">
+            A pending order.
+        </div>
+
+        <div id="order" class="order" order-state="canceled">
+            A canceled order.
+        </div>
+    </body>
+   
+</html>

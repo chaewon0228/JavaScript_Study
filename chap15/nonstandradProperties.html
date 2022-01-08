@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div id = "elem" about = "Elephant"></div>
+        <script>
+            alert(elem.getAttribute('about'));
+            alert(elem.getAttribute('test', 1000));
+
+            for (let attr of elem.attributes) {  //속성 전체가 나열됨
+                alert( `${attr.name} = ${attr.value}` );
+            }
+        </script>
+    </body>
+   
+</html>
